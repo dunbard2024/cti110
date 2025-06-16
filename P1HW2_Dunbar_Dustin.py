@@ -1,32 +1,25 @@
 # Dustin Dunbar
-# June 11,2025
+# June 16,2025
 # P1HW2
 # Create a program that does some basic math on numbers that are entered.
 
-budget = 2000
-city_name = "New Orleans"
-gas = 300
-lodge = 750
-food = 350
-expenses = gas+lodge+food
-balance = budget-gas-lodge-food
+print("This program calculates and displays travel expenses")
+budget = int(input("Enter Budget: "))
+destination = input("Enter your travel destination: ")
+gas = int(input("How much do you think you will spend on gas? "))
+accommodation = int(input("Approximately, how much will you need for accommodation/hotel? "))
+food = int(input("Last, how much do you need for food? "))
 
-print('This program calculates and display travel expenses')
-print('Enter Budget:',budget)
-print('Enter your travel destination:',city_name)
-print('How much do you think you will spend on gas?',gas)
-print('Approximately, how much will you need for accomodation/hotel?',lodge)
-print('Last, how much do you need for food?',food)
+print("------------Travel Expenses------------")
+print(f"Location: {destination}")
+print(f"Initial Budget: {budget}")
+print(f"Fuel: {gas}")
+print(f"Accommodation: {accommodation}")
+print(f"Food: {food}")
 
-print('-----Travel Expenses-----')
-print('Location:',city_name)
-print('Initial Budget:',budget)
+total_expenses = gas + accommodation + food
+remaining_balance = budget - total_expenses
 
-print('Fuel:',gas)
-print('Accomodation:',lodge)
-print('Food:',food)
-
-print('Remaining Balance:',balance)
-
+print(f"Remaining Balance: {remaining_balance}")
 
 
